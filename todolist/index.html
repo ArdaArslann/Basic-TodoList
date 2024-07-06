@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .standard {
+            line-height: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        .input-field {
+            
+            width: 400px;
+            text-align: center;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .yes {
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            line-height: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .remove {
+            background-color: white;
+            color: red;
+            border-radius: 20px;
+            border: 0px;
+            line-height: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .no {
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            line-height: 20px;
+            padding: 10px 20px;
+        }
+
+        .align {
+            
+            padding: 10px;
+            
+        
+            border: 1px solid black; /* Adding border */
+            border-radius: 3px; /* Adding border radius */
+            width: 400px;
+            text-align: left;
+        }
+
+        .align li {
+            display: flex;
+            align-items: center;
+            
+            border: 1px solid black; /* Adding border */
+            border-radius: 3px; /* Adding border radius */
+            margin-bottom: 5px;
+        }
+
+        .align li span {
+            width: 700px; /* Same width as the input field */
+            text-align: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <h1 class="text" id="text1">TODO LIST</h1>
+    <div class="standard">
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <input id="inp" type="text" placeholder="Type something..." class="input-field" />
+                    <div class="button-group">
+                        <button id="add" class="yes" type="submit">Add</button>
+                        <button class="no" onclick="clearAll()">Remove</button>
+                    </div>
+                </div>
+            </form>
+
+            <ul class="align" id="list">
+                <!--
+               
+                <li>
+                    <span>TODONAME</span>
+                    <button class="sil">SİL</button>
+                </li>
+                -->
+                
+            </ul>
+        </div>
+    </div>
+
+<script src="script.js">
+    
+</script>
+
+  
+</body>
+</html>
